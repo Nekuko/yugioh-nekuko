@@ -1,2 +1,2 @@
 # yugioh-nekuko
-Yu-Gi-Oh Partial Simulator
+Partial Yu-Gi-Oh Simulator
