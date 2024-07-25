@@ -1,0 +1,439 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.phaseBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px;
+  box-sizing: border-box;
+  display: flex;
+  color: white;
+  margin: 5x;
+  border: 2px solid black;
+  width: 95%;
+  height: 10%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E2124;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgrey;
+}
+
+.boxTitle {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.viewAreaContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewArea {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.searchbar {
+  background-color: #424549;
+  border: none;
+  margin: 2px;
+  outline: none;
+  color: white;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  width: 55%;
+}
+
+.locationContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.locationCount {
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+}
+
+.smallCard {
+  height: 124px;
+  width: 84px;
+  position: absolute;
+}
+
+.cardPosition {
+  height: 37px;
+  width: 25px;
+  position: relative;
+  padding: 4%;
+}
+
+.choiceBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: fit-content;
+  min-width: 30%;
+  min-height: 25%;
+  height: fit-content;
+  background-color: #424549;
+  z-index: 9999;
+  box-shadow: 0 0 10px black;
+}
+
+.choiceContainer {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.choiceTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  left: 0;
+}
+
+.choice {
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #1E2124;
+}
+
+.choiceImage {
+  height: 128px;
+  width: 88px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.bubble {
+  background-color: #1E2124;
+  border-radius: 5px;
+  border: 2px solid #1E2124;
+  color: white;
+  width: fit-content;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.bubbleMain {
+  background-color: #424549;
+  border-radius: 5px;
+  border: 2px solid #424549;
+  color: white;
+  width: fit-content;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  font-weight: bold;
+}
+
+.positionInformation, .statInformation, .gameInformation, .phaseInformation, .summonInformation, .activateInformation {
+  height: fit-content;
+  max-height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3%;
+  margin-bottom: 2px;
+}
+
+.playerInformationHalf {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.playerInformation {
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3%;
+  padding-top: 3%;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.playerInformation span {
+  margin-left: 10%;
+}
+
+.cardEffectInformation {
+  height: fit-content;
+  max-height: 20%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  margin-bottom: 2px;
+  padding-left: 3%;
+  padding-bottom: 3%;
+}
+
+.positionInformation img:hover {
+  filter: brightness(+130%);
+}
+
+.defenseCard {
+  transform: rotate(-90deg);
+}
+
+.player2Card {
+  transform: rotate(180deg);
+}
+
+.deselected {
+  filter: brightness(50%);
+}
+
+.viewAreaCard {
+  height: 77px;
+  width: 52px;
+  margin: 5px;
+  position: relative;
+}
+
+.phase {
+  position: relative;
+  padding: 3px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.panel {
+  height: 100%;
+  width: 25%;
+  background-color: #282B30;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+
+.cardPreview {
+  padding: 10px;
+}
+
+.playerInformationSplit {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.cardInformation, .cardEffect, .gameInformationContainer, .playerInformationContainer, .cardActions {
+  overflow-y: scroll;
+  font-size: small;
+  white-space: pre-line;
+}
+
+.handContainer {
+  border: 1px solid none;
+  height: 128px;
+  width: fit-content;
+  max-width: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.handContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.handDragging {
+  border: 1px solid gray;
+}
+
+.handCard {
+  height: 128px;
+  width: 88px;
+  margin: 5px 3px;
+  font-size: 14px;
+  position: relative;
+}
+
+.handCard:hover {
+  transform: translateY(-5%);
+}
+
+.locationContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.panelSection {
+  padding: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  color: white;
+  width: 95%;
+  height: fit-content;
+  max-height: 20%;
+  margin: 10px;
+}
+
+.cardImage {
+  height: 128px;
+  width: 88px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.zone, .location {
+  height: 128px;
+  width: 88px;
+  background-color: #181818;
+  box-sizing: border-box;
+  margin: 5px 24px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+}
+
+.bigCard {
+  height: 360px;
+  width: 244px;
+}
+
+.monsterZone {
+  border-color: #826c69;
+}
+
+.monsterDefenseZone, .zoneContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.defenseZone {
+  height: 128px;
+  width: 88px;
+  transform: rotate(90deg);
+  background-color: #323232;
+  margin: 5px 24px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  z-index: -1;
+}
+
+.deckZone {
+  border-color: #483c45;
+}
+
+.locationDrag {
+  filter: brightness(200%)
+}
+
+.phases h3:hover {
+  filter: brightness(150%)
+}
+
+.extraDeckZone {
+  border-color: #95c9e7
+}
+
+.graveyardZone {
+  border-color: gray;
+}
+
+.extraMonsterZone {
+  border-color: #125f97
+}
+
+.fieldZone {
+  border-color: green;
+}
+
+.spellTrapZone {
+  border-color: #355963;
+}
+
+.banishedZone {
+  border-color: purple;
+}
+
+.emptySpace {
+  height: 128px;
+  width: 88px;
+  margin: 5px 24px 5px;
+}
+
+.zones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
